@@ -23,12 +23,44 @@ body {
   color: hotpink;
   border-color: hotpink;
   background-color: #490c56;
+
+  & a:hover {
+    color: #490c56;
+    background-color: hotpink;
+  }
 }
 
 .landing.alt {
   color: #490c56;
   border-color: #490c56;
   background-color: hotpink;
+
+  & a:hover {
+    color: hotpink;
+    background-color: #490c56;
+  }
+}
+
+.experiences {
+  color: #9a6a7f;
+  border-color: #9a6a7f;
+  background-color: black;
+
+  & a:hover {
+    color: black;
+    background-color: #9a6a7f;
+  }
+}
+
+.experiences.alt {
+  color: black;
+  border-color: black;
+  background-color: #9a6a7f;
+
+  & a:hover {
+    color: #9a6a7f;
+    background-color: black;
+  }
 }
 
 .sidebar {
