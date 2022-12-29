@@ -1,14 +1,14 @@
 .flex-col
   = render partial: '/shared/sidebar', locals: {current: "experiences"} 
-  %div{class: "w-[40rem]"}
+  %div{class: "w-[56rem]"}
     .mt-24.flex.text-4xl
       %i.fa-solid.fa-rocket.mr-4
       %span.mr-2 2022 -
       %span.mr-2.font-bold Software Engineer
       %span.mr-2 @
       %span Orbit
-    .mt-8
-      - stack = ["Ruby on rails", "Tailwind", "Turbo Frames", "Sidekiq", "Haml"]
+    .mt-4
+      - stack = ["Ruby on rails", "Tailwind", "Turbo Frames", "Sidekiq", "Haml", "Alpine.js"]
       - stack.each do |skill|
         %span.text-sm.font-semi-bold.mr-2.px-2.5.py-0.5.rounded.border.border-current 
           = skill     
@@ -27,7 +27,7 @@
       %span.mr-2.font-bold Alumni
       %span.mr-2 @
       %span Le Wagon
-    .mt-8
+    .mt-4
       - stack = ["Ruby on rails", "Bootstrap", "HTML", "CSS", "Javascript", "Git"]
       - stack.each do |skill|
         %span.text-sm.font-semi-bold.mr-2.px-2.5.py-0.5.rounded.border.border-current 
@@ -39,3 +39,13 @@
         .li - Learned all the basics of programmation
         .li - Designed and created as a group a clone of AirBnb
         .li - Designed and created as a group Perfect Watch, a web application finding you a movie to watch in less than five minutes
+
+    .mt-24.flex.text-4xl
+      %i.fa-solid.fa-scale-balanced.mr-4
+      %span.mr-2 2021 -
+      %span.mr-2.font-bold Paralegal
+      %span.mr-2 @
+      %span Lavoix
+    .mt-8.text-l
+      = "I worked in intellectual property law before my carreer change."
+    
