@@ -1,0 +1,25 @@
+:ruby
+  portfolio =   { name: "Portfolio", 
+                  icon: "paint-roller", 
+                  link: "Portfolio" }
+  experiences = { name: "Experiences",
+                  icon: "briefcase",
+                  link: "Experiences" }
+  brice =       { name: "Me",
+                  icon: "user",
+                  link: "Experiences" }
+  articles =       { name: "Articles",
+                  icon: "newspaper",
+                  link: "Experiences" }
+
+  sections = [brice, portfolio, experiences, articles]
+   
+
+.flex.h-full.border-r.mr-5.border-inherit
+  .w-48
+    %ul
+      - sections.each do |section|
+        %li.py-2
+          %i.fa.mr-2.text-xs{class: "fa-#{section[:icon]}"}
+          = section[:name]
+          

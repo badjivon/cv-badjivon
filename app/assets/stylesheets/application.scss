@@ -13,3 +13,11 @@
  *= require_tree .
  *= require_self
  */
+@import "font-awesome";
+
+.landing {
+  color: #63cbc9;
+  border-color: #63cbc9;
+  background-color: indigo;
+  font-family: "Roboto", sans-serif;
+}
