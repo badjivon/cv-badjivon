@@ -15,9 +15,23 @@
  */
 @import "font-awesome";
 
+body {
+  font-family: "Times-new-roman", serif;
+}
+
 .landing {
-  color: #63cbc9;
-  border-color: #63cbc9;
-  background-color: indigo;
-  font-family: "Roboto", sans-serif;
+  color: hotpink;
+  border-color: hotpink;
+  background-color: #490c56;
+}
+
+.landing.alt {
+  color: #490c56;
+  border-color: #490c56;
+  background-color: hotpink;
+}
+
+.sidebar {
+  font-family: "Apple II Screen Typeface", sans-serif;
+  border-color: currentColor;
 }
