@@ -1,2 +1,41 @@
-.flex-col 
+.flex-col
   = render partial: '/shared/sidebar', locals: {current: "experiences"} 
+  %div{class: "w-[40rem]"}
+    .mt-24.flex.text-4xl
+      %i.fa-solid.fa-rocket.mr-4
+      %span.mr-2 2022 -
+      %span.mr-2.font-bold Software Engineer
+      %span.mr-2 @
+      %span Orbit
+    .mt-8
+      - stack = ["Ruby on rails", "Tailwind", "Turbo Frames", "Sidekiq", "Haml"]
+      - stack.each do |skill|
+        %span.text-sm.font-semi-bold.mr-2.px-2.5.py-0.5.rounded.border.border-current 
+          = skill     
+    .mt-8.text-l
+      = "As a part of Gravity Team, my work at Orbit entailed helping users of the app have the best possible experience."
+    .mt-8.flex.flex-col
+      = "Some tasks I have worked on include:"
+      .ul
+        .li - Migrating from multiple ways to display Font-Awesome icons through the app to a homemade Design System Component
+        .li - Implement infinite scrolling on some pages with Turbo Frames
+        .li - Implement a strong password authentication in the app
+
+    .mt-24.flex.text-4xl
+      %i.fa-solid.fa-train-subway.mr-4
+      %span.mr-2 2021 -
+      %span.mr-2.font-bold Alumni
+      %span.mr-2 @
+      %span Le Wagon
+    .mt-8
+      - stack = ["Ruby on rails", "Bootstrap", "HTML", "CSS", "Javascript", "Git"]
+      - stack.each do |skill|
+        %span.text-sm.font-semi-bold.mr-2.px-2.5.py-0.5.rounded.border.border-current 
+          = skill     
+    .mt-8.text-l
+      = "9 weeks Web development bootcamp."
+    .mt-8.flex.flex-col
+      .ul
+        .li - Learned all the basics of programmation
+        .li - Designed and created as a group a clone of AirBnb
+        .li - Designed and created as a group Perfect Watch, a web application finding you a movie to watch in less than five minutes
