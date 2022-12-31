@@ -1,2 +1,29 @@
 .flex-col 
-  = render partial: '/shared/sidebar', locals: {current: "/"} 
+  = render partial: '/shared/menubar', locals: {current: "/"} 
+  %div{class: "w-[42rem]"}
+    .mt-24.ml-3
+      .text-4xl
+        %span Hi! I'm Brice! 
+        %br
+        %br
+      .text-xl
+        %span After spending my first year in code at Orbit, I'm currently looking for a new engineering position. Preferably involving some Ruby on Rails, but I am a fast learner so I'm okay with some new things.
+        %br
+        %br
+      .text-xl.border-t-2.py-6.border-current
+        %span Personal Updates:
+        %br
+        %br
+        %i.fa-solid.fa-graduation-cap
+        %span Currently learning: 
+        %span.font-bold React (the Epic React course by Kent. C. Dodds is incredible) 
+        %br
+        %br
+        %i.fa-solid.fa-code
+        %span Currently working on:
+        %span.font-bold A personal challenge, coding a basic gaming backlog tracker with React and Rails, using the react-rails gem and the IGDB api
+        %br
+        %br
+        %i.fa-solid.fa-gamepad
+        %span Currently playing:
+        %span.font-bold Final Fantasy XIV, Triangle Strategy, Disco Elysium, Vampire Survivors (if only I had a tracker for all of this)

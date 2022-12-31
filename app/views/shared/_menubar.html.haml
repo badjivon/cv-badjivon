@@ -1,26 +1,26 @@
 :ruby
   current_page = local_assigns.fetch :current, ""
   
-  portfolio =   { name: "Projets", 
-                  icon: "paint-roller", 
-                  link: "Portfolio" }
+  portfolio =   { name: "Projects", 
+                  icon: "code", 
+                  link: "projects" }
   experiences = { name: "Experience",
-                  icon: "briefcase",
+                  icon: "laptop",
                   link: "experiences" }
-  brice =       { name: "Brice Adjivon",
-                  icon: "user",
+  brice =       { name: "badjivon",
+                  icon: "circle-user",
                   link: "/" }
-  links =    { name: "Links",
+  links =       { name: "Links",
                   icon: "link",
                   link: "links" }
   updates =    {  name: "Updates",
                   icon: "compact-disc",
                   link: "updates" }
 
-  sections = [brice, portfolio, experiences, links, updates]
+  sections = [brice, portfolio, experiences, links]
    
 .w-full.flex.content-center
-  .border-2.sidebar.p-2
+  .border-2.menubar.p-2
     .flex
       - sections.each do |section|
         = link_to section[:link] do

@@ -1,0 +1,9 @@
+.flex-col
+  = render partial: '/shared/menubar', locals: {current: "links"} 
+  %div{class: "w-[42rem]"}
+    .mt-24.ml-3.text-xl
+      = link_to "LinkedIn", "https://www.linkedin.com/in/badjivon/?locale=en_US"  
+      %br
+      = link_to "Github", "https://github.com/badjivon"
+      %br
+      = link_to "Livestream of my reconversion experience (French)", "https://www.twitch.tv/videos/1603535873"

@@ -1,6 +1,6 @@
 .flex-col
-  = render partial: '/shared/sidebar', locals: {current: "experiences"} 
-  %div{class: "w-[56rem]"}
+  = render partial: '/shared/menubar', locals: {current: "experiences"} 
+  %div{class: "w-[42rem]"}
     .mt-24.flex.text-4xl
       %i.fa-solid.fa-rocket.mr-4
       %span.mr-2 2022 -
@@ -12,7 +12,7 @@
       - stack.each do |skill|
         %span.text-sm.font-semi-bold.mr-2.px-2.5.py-0.5.rounded.border.border-current 
           = skill     
-    .mt-8.text-l
+    .mt-8
       = "As a part of Gravity Team, my work at Orbit entailed helping users of the app have the best possible experience."
     .mt-8.flex.flex-col
       = "Some tasks I have worked on include:"
