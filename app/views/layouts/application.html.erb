@@ -5,7 +5,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/apple-ii-screen-typeface" rel="stylesheet">
-    <title>CvBadjivon</title>
+    <title>Brice Adjivon</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -16,8 +16,8 @@
   </head>
 
   <body x-data="{ light: false }" class="<%= controller_name %> <%= action_name %>" :class="light ? 'alt' : ''">
-    <i class="absolute text-xl m-4 top-0 right-0 fa-solid fa-circle-half-stroke" x-on:click="light = !light"></i>
     <main class="container mt-24 px-5 flex place-content-center border-inherit">
+    <i class="absolute text-xl m-4 top-0 right-0 fa-solid fa-circle-half-stroke" x-on:click="light = !light"></i>
       <%= yield %>
     </main>
   </lass=>
