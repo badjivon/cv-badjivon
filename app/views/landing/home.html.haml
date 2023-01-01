@@ -1,8 +1,8 @@
-.flex-col 
+.flex.flex-col.w-full.place-items-center
   = render partial: '/shared/menubar', locals: {current: "/"} 
-  %div{class: "w-[42rem]"}
+  %div{class: "md:px-12 md:w-9/12"}
     .mt-24.ml-3
-      .text-4xl
+      .text-xl.md:text-4xl
         %span Hi! I'm Brice! 
         %br
         %br

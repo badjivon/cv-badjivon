@@ -1,7 +1,7 @@
-.flex-col
+.flex.flex-col.w-full.place-items-center
   = render partial: '/shared/menubar', locals: {current: "experiences"} 
-  %div{class: "w-[42rem]"}
-    .mt-24.flex.text-4xl
+  %div{class: "md:w-9/12 md:px-12"}
+    .mt-24.flex.text-xl.md:text-4xl
       %i.fa-solid.fa-rocket.mr-4
       %span.mr-2 2022 -
       %span.mr-2.font-bold Software Engineer
@@ -21,7 +21,7 @@
         .li - Implement infinite scrolling on some pages with Turbo Frames
         .li - Implement a strong password authentication in the app
 
-    .mt-24.flex.text-4xl
+    .mt-24.flex.text-xl.md:text-4xl
       %i.fa-solid.fa-train-subway.mr-4
       %span.mr-2 2021 -
       %span.mr-2.font-bold Alumni
@@ -40,7 +40,7 @@
         .li - Designed and created as a group a clone of AirBnb
         .li - Designed and created as a group Perfect Watch, a web application finding you a movie to watch in less than five minutes
 
-    .mt-24.flex.text-4xl
+    .mt-24.flex.text-xl.md:text-4xl
       %i.fa-solid.fa-scale-balanced.mr-4
       %span.mr-2 2021 -
       %span.mr-2.font-bold Paralegal
@@ -48,4 +48,4 @@
       %span Lavoix
     .mt-8.text-l
       = "I worked in intellectual property law before my carreer change."
-    
+    .mb-12

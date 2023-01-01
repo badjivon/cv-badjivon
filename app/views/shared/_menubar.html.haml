@@ -19,15 +19,11 @@
 
   sections = [brice, portfolio, experiences, links]
    
-.w-full.flex.content-center
-  .border-2.menubar.p-2
-    .flex
-      - sections.each do |section|
-        = link_to section[:link] do
-          .px-6.text-s
-            %i.fa.mr-2{class: "fa-#{section[:icon]}"}
-            %span{ class: [("underline underline-offset-4" if current_page == section[:link])] }
-              = section[:name]
-      = "-"
-      %i.text-s.fa-solid.fa-circle-half-stroke.mt-1.px-6{"x-on:click" => "light = !light"}
-        
+.border-2.menubar.p-2.flex.flex-wrap.justify-around{class: "md:w-9/12"}
+  - sections.each do |section|
+    .px-6.text-s.shrink.flex.flex-wrap
+      = link_to section[:link] do
+        %i.fa.mr-2{class: "fa-#{section[:icon]}"}
+        %span{ class: [("underline underline-offset-4" if current_page == section[:link])] }
+          = section[:name]
+    

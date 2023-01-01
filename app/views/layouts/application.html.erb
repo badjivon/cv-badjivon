@@ -16,7 +16,8 @@
   </head>
 
   <body x-data="{ light: false }" class="<%= controller_name %> <%= action_name %>" :class="light ? 'alt' : ''">
-    <main class="container place-content-center mx-auto mt-28 px-5 flex border-inherit">
+    <i class="absolute text-xl m-4 top-0 right-0 fa-solid fa-circle-half-stroke" x-on:click="light = !light"></i>
+    <main class="container mt-24 px-5 flex place-content-center border-inherit">
       <%= yield %>
     </main>
   </lass=>

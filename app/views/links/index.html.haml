@@ -1,6 +1,6 @@
-.flex-col
+.flex.flex-col.w-full.place-items-center
   = render partial: '/shared/menubar', locals: {current: "links"} 
-  %div{class: "w-[42rem]"}
+  %div
     .mt-24.ml-3.text-xl
       %i.fa-brands.fa-linkedin.mr-2
       = link_to "LinkedIn", "https://www.linkedin.com/in/badjivon/?locale=en_US"  
