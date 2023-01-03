@@ -26,4 +26,5 @@
         %i.fa.mr-2{class: "fa-#{section[:icon]}"}
         %span{ class: [("underline underline-offset-4" if current_page == section[:link])] }
           = section[:name]
+  %button.absolute.text-xl.m-4.top-0.right-0.fa-solid.fa-circle-half-stroke{"x-on:click" => "light = !light"}
     

@@ -17,7 +17,6 @@
 
   <body x-data="{ light: $persist(false) }" class="<%= controller_name %> <%= action_name %>" :class="light ? 'alt' : ''">
     <main class="container mt-24 px-5 flex place-content-center border-inherit">
-    <button class="absolute text-xl m-4 top-0 right-0 fa-solid fa-circle-half-stroke" x-on:click="light = !light"></button>
       <%= yield %>
     </main>
   </lass=>
