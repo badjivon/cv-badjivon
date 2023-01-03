@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@alpinejs/persist": "^3.10.5"
+  }
+}
