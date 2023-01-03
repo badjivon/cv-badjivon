@@ -10,6 +10,6 @@ Alpine.plugin(persist);
 
 window.Alpine = Alpine;
 
-document.addEventListener("DOMContentLoaded", function (event) {
-  window.Alpine.start();
+queueMicrotask(() => {
+  Alpine.start();
 });
