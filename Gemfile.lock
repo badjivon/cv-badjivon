@@ -231,6 +231,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap
+  bundler (~> 2.4, >= 2.4.2)
   capybara
   debug
   font-awesome-sass (~> 6.2.1)
@@ -256,4 +257,4 @@ RUBY VERSION
    ruby 3.1.2p20
 
 BUNDLED WITH
-   2.3.26
+   2.4.2

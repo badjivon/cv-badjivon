@@ -10,6 +10,8 @@ gem "haml"
 
 gem 'sassc-rails'
 
+gem 'bundler', '~> 2.4', '>= 2.4.2'
+
 gem "font-awesome-sass", "~> 6.2.1"
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
