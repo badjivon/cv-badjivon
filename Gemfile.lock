@@ -231,7 +231,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap
-  bundler (~> 2.4, >= 2.4.2)
+  bundler (~> 2.3, >= 2.3.26)
   capybara
   debug
   font-awesome-sass (~> 6.2.1)

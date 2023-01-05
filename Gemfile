@@ -10,7 +10,7 @@ gem "haml"
 
 gem 'sassc-rails'
 
-gem 'bundler', '~> 2.4', '>= 2.4.2'
+gem 'bundler', '~> 2.3', '>= 2.3.26'
 
 gem "font-awesome-sass", "~> 6.2.1"
 
