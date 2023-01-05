@@ -1,14 +1,62 @@
 .flex.flex-col.w-full.place-items-center
   = render partial: '/shared/menubar', locals: {current: "projects"} 
   %div{class: "md:px-12"}
-    .mt-24.ml-3.text-xl
-      = "- simple-game-collection"
+    .mt-24.ml-3.text-xl.mt-24
+      .i.fa-solid.fa-code-branch.mr-2
+      = "simple-game-collection"
     .mt-4.ml-3.text-base
       A video game backlog manager.
       It is my first React + Rails project.
       It is a minimum viable product but it works!
+    .mt-4.ml-3
+      - stack = ["Ruby on rails", "Tailwind", "React", "API"]
+      - stack.each do |skill|
+        %span.text-sm.font-semi-bold.mr-2.px-2.5.py-0.5.rounded.border.border-current 
+          = skill  
     .mt-4.ml-3.text-base 
       = "->"
       = link_to "GitHub", "https://t.co/XWvx2g6Hbl", target: "_blank"
+    .mt-32.ml-3.text-xl.mt-6
+      .i.fa-solid.fa-code-branch.mr-2
+      = "this portfolio and resume"
+    .mt-4.ml-3.text-base
+      This portfolio is a Rails project.
+    .mt-4.ml-3
+      - stack = ["Ruby on rails", "Tailwind", "Haml", "API", "Alpine.js"]
+      - stack.each do |skill|
+        %span.text-sm.font-semi-bold.mr-2.px-2.5.py-0.5.rounded.border.border-current 
+          = skill  
+    .mt-4.ml-3.text-base 
+      = "->"
+      = link_to "GitHub", "https://github.com/badjivon/cv-badjivon", target: "_blank"
+    .mt-32.ml-3.text-xl.mt-6
+      .i.fa-solid.fa-code-branch.mr-2
+      = "perfect watch"
+    .mt-4.ml-3.text-base
+      My second Rails group project.
+      Made at Le Wagon during our 9 weeks bootcamp.
+    .mt-4.ml-3
+      - stack = ["Ruby on rails", "Bootstrap", "API", "Stimulus.js"]
+      - stack.each do |skill|
+        %span.text-sm.font-semi-bold.mr-2.px-2.5.py-0.5.rounded.border.border-current 
+          = skill  
+    .mt-4.ml-3.text-base 
+      = "->"
+      = link_to "GitHub", "https://github.com/sixtine-c/perfect_watch", target: "_blank"
+    .mt-32.ml-3.text-xl.mt-6
+      .i.fa-solid.fa-code-branch.mr-2
+      = "sitter on the way"
+    .mt-4.ml-3.text-base
+      My first Rails group project.
+      Made at Le Wagon during our 9 weeks bootcamp.
+    .mt-4.ml-3
+      - stack = ["Ruby on rails", "Bootstrap", "Stimulus.js"]
+      - stack.each do |skill|
+        %span.text-sm.font-semi-bold.mr-2.px-2.5.py-0.5.rounded.border.border-current 
+          = skill  
+    .mt-4.ml-3.text-base 
+      = "->"
+      = link_to "GitHub", "https://github.com/sixtine-c/sitter_on_the_way", target: "_blank"
+
 
 
