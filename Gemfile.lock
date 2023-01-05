@@ -238,6 +238,9 @@ DEPENDENCIES
   haml
   importmap-rails
   jbuilder
+  net-imap
+  net-pop
+  net-smtp
   pg (~> 1.4)
   puma (~> 5.0)
   rails (~> 7.0.4)

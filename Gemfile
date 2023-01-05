@@ -14,6 +14,11 @@ gem 'bundler', '~> 2.3', '>= 2.3.26'
 
 gem "font-awesome-sass", "~> 6.2.1"
 
+gem "net-smtp", require: false
+gem "net-imap", require: false
+gem "net-pop", require: false
+
+
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
