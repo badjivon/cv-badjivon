@@ -1,4 +1,4 @@
-# fly.toml file generated for badjivon on 2022-12-31T17:04:26+01:00
+# fly.toml file generated for badjivon on 2023-01-05T18:12:00+01:00
 
 app = "badjivon"
 kill_signal = "SIGINT"
